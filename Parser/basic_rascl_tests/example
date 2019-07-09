@@ -1,0 +1,35 @@
+
+start->  initKeyword |  | {start'}
+start -> initKeyword | initAssignment |
+
+if Ttype in Keywords
+initKeyword
+
+if token == "int" : "INT", "float" : "FLOAT"
+-> int initAssignment; | float initAssignment
+initAssignment -> factor |
+factor -> id
+id -> AA'B
+A -> a-zA-Z
+A' -> A+0-9
+B -> [C][C] | [C] | $
+C -> digit | id
+D ->
+
+
+elif token == "if" : "IF", "else" : "ELSE"
+->if(statement){}else{};
+elif token is "while" : "WHILE"
+->(statement){start};
+
+
+initAssignment
+
+if token == id
+
+
+statement ->
+
+
+
+factor = 
